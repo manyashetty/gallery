@@ -68,3 +68,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+    {/* <InfiniteLooper direction="right" speed="9">
+      <div className="contentBlock contentBlock--two">
+        <img className="contentImage" src={F} alt="img2" />
+      </div>
+      <div className="contentBlock contentBlock--two">
+        <img className="contentImage" src={A} alt="img2" />
+      </div>
+      <div className="contentBlock contentBlock--two">
+        <img className="contentImage" src={B} alt="img2" />
+      </div>
+      <div className="contentBlock contentBlock--two">
+        <img className="contentImage" src={C} alt="img2" />
+      </div>
+      <div className="contentBlock contentBlock--two">
+        <img className="contentImage" src={D} alt="img2" />
+      </div>
+    </InfiniteLooper> */}

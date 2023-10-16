@@ -1,0 +1,91 @@
+/* Looper styles */
+@keyframes slideAnim {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* .looper {
+  width: 100%;
+  overflow: hidden;
+ 
+} */
+
+.looper__innerList {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.looper__innerList[data-animate="true"] .looper__listInstance {
+  animation: slideAnim linear infinite;   
+}
+
+.looper__listInstance {
+  display: flex;
+  width: max-content;
+
+  /* animation: none; */
+}
+
+.looper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.looper.paused .looper__listInstance {
+  animation-play-state: paused;
+}
+
+
+/* Example content styles */
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#root {
+  flex: 1;
+  padding: 16px;
+  font-family: sans-serif;
+  color: var(--offwhite);  
+  background: linear-gradient(-45deg, #4132e6, #05031a);  
+}
+
+/* to change the card container size */
+.contentBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+  width: 199px;
+  /* height: 180px;
+  width: 150px; */
+  margin: 10px;
+  padding: 16px; 
+  text-align: center;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);  
+}
+
+
+
+/* Add this to your Gallery.css file */
+.contentImage {
+  transition: transform 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.05);  
+  height: 270px;
+  width: 189px;
+}
+
+.looper.paused .contentImage:hover {
+  transform: scale(1.4);
+}
