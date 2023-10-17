@@ -65,27 +65,52 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 280px;
-  width: 199px;
+  height: 290px;
+  width: 300px;
   /* height: 180px;
   width: 150px; */
   margin: 10px;
   padding: 16px; 
   text-align: center;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.05);  
+  
+  border-radius: 5px;
+  /* background: rgba(255, 255, 255, 0.915);   */
+  box-shadow: 0 0 10px 5px #946ae7;
 }
-
+.contentBlock1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 290px;
+  width: 230px;
+  /* height: 180px;
+  width: 150px; */
+  margin: 10px;
+  padding: 16px; 
+  text-align: center;
+  border-radius: 5px;
+  /* background: rgba(255, 255, 255, 0.915);  */
+  box-shadow: 0 0 10px 5px #3033f2;
+}
 
 
 /* Add this to your Gallery.css file */
 .contentImage {
   transition: transform 0.3s ease-in-out;
   background: rgba(255, 255, 255, 0.05);  
-  height: 270px;
-  width: 189px;
+  height: 100%;
+  width: 100%;
+}
+
+#one{
+  height:100%;
+  width: 100%;
+  display: block;
+  max-width: none;
+  transition: transform 0.3s ease-in-out;
 }
 
 .looper.paused .contentImage:hover {
   transform: scale(1.4);
 }
+

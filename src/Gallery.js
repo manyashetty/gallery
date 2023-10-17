@@ -1,15 +1,16 @@
 import React from "react";
 import "./Gallery.css";
-import A from "./images/1.jpeg";
-import B from "./images/2.jpg";
-import C from "./images/3.jpg";
-import D from "./images/4.jpg";
-import E from "./images/5.jpg";
-import F from "./images/6.jpg";
-import G from "./images/7.jpg";
-import H from "./images/8.jpg";
-import I from "./images/9.jpg";
+import A from "./images/main1.webp";
+import B from "./images/main2.webp";
+import C from "./images/main3.webp";
+import D from "./images/main4.webp";
+import E from "./images/main5.webp";
+import F from "./images/main6.webp";
+import G from "./images/main7.webp";
+import H from "./images/main8.webp";
+import I from "./images/main9.webp";
 import { useState, useEffect } from "react";
+
 
 const InfiniteLooper = function InfiniteLooper({
   speed,
@@ -92,34 +93,34 @@ const App = () => (
   <div className="app">
 
     <InfiniteLooper speed="14" direction="right">
-      <div className="contentBlock contentBlock--one">
+      <div className="contentBlock1 ">
         <img className="contentImage" src={A} alt="img1" />
       </div>
-      <div className="contentBlock contentBlock--one">
-        <img className="contentImage" src={B} alt="img2" />
+      <div className="contentBlock ">
+        <img className="contentImage " id="one" src={B} alt="img2" />
       </div>
-      <div className="contentBlock contentBlock--one">
+      <div className="contentBlock ">
         <img className="contentImage" src={C} alt="img2" />
       </div>
-      <div className="contentBlock contentBlock--one">
+      <div className="contentBlock ">
         <img className="contentImage" src={D} alt="img2" />
       </div>
-      <div className="contentBlock contentBlock--one">
+      <div className="contentBlock ">
         <img className="contentImage" src={E} alt="img2" />
       </div>
     </InfiniteLooper>
 
     <InfiniteLooper direction="left" speed="14">
-      <div className="contentBlock contentBlock--two">
+      <div className="contentBlock1 ">
         <img className="contentImage" src={F} alt="img2" />
       </div>
-      <div className="contentBlock contentBlock--two">
+      <div className="contentBlock ">
         <img className="contentImage" src={G} alt="img2" />
       </div>
-      <div className="contentBlock contentBlock--two">
+      <div className="contentBlock ">
         <img className="contentImage" src={H} alt="img2" />
       </div>
-      <div className="contentBlock contentBlock--two">
+      <div className="contentBlock ">
         <img className="contentImage" src={I} alt="img2" />
       </div>
     </InfiniteLooper>
